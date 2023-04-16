@@ -19,9 +19,9 @@ const HALF_LIFE_PERIOD = 5730;
  */
 
 function dateSample(x) {
-  // throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError('Not implemented');
   // // remove line with error and write your code here
-  return ((x*HALF_LIFE_PERIOD)/MODERN_ACTIVITY);
+  // return ((x*HALF_LIFE_PERIOD)/MODERN_ACTIVITY);
   
 }
 

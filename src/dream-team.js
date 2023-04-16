@@ -17,13 +17,16 @@ function createDreamTeam(array) {
   // throw new NotImplementedError('Not implemented');
   // // remove line with error and write your code here
   let nameDream = [];
-  array.forEach(element => {
-    if((typeof element == 'string')){
-      nameDream.push(element[0]);
-    }
-  });
-  
-  return nameDream.sort().join('').toUpperCase();
+  if(Array.isArray(array) == true){
+    array.forEach(element => {
+      if((typeof element == 'string')){
+        nameDream.push(element[0]);
+      }
+    });
+    return nameDream.sort().join('').toUpperCase();
+  } else {
+    return false;
+  }
 }
 
 module.exports = {
